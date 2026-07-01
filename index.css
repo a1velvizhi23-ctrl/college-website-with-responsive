@@ -1,0 +1,89 @@
+/* Home Section */
+
+.index{
+    height: 650px;   /* Section height change */
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+    url("images/college-hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.index h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.index p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.index button{
+    padding:12px 30px;
+    border:none;
+    border-radius:25px;
+    background:#0066ff;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.index button:hover{
+    background:#ffd700;
+    color:#003366;
+}
+
+/* Highlights Section */
+
+.highlights{
+    padding:60px 10%;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    background:#f5f9ff;
+    text-align:center;
+}
+
+.highlight-card{
+    background:white;
+    padding:30px 20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.highlight-card:hover{
+    transform:translateY(-8px);
+}
+
+.highlight-card h3{
+    color:#0066ff;
+    margin-bottom:12px;
+}
+
+.highlight-card p{
+    color:#555;
+    line-height:1.6;
+}
+
+@media(max-width:900px){
+    .highlights{
+        grid-template-columns:1fr;
+    }
+    .home h2{
+        font-size:30px;
+    }
+}

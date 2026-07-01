@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DreamVista College</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+<header>
+    <h1>DreamVista College</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About College</a>
+        <a href="courses.html">courses</a>
+        <a href="event.html">Events</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
+
+<section class="contact-section">
+    <h2>Contact Us</h2>
+    <p class="contact-intro">We would love to hear from you. Reach out with any questions.</p>
+
+    <div class="contact-wrapper">
+        <div class="contact-details">
+            <p><strong>Address:</strong> 21 madhu Road, Chennai, Tamil Nadu 600002</p>
+            <p><strong>Phone:</strong> +91 44 4444 0000</p>
+            <p><strong>Email:</strong> info@dreamvistacollege.edu</p>
+        </div>
+
+        <form id="contactForm" onsubmit="submitContactForm(event)">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+            <p id="formMsg"></p>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>@ 2026 DreamVista College</p>
+</footer>
+
+<script src="contact.js"></script>
+</body>
+</html>
